@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+    <script src="./cal.js"></script>
+ 
+</head>
+<body style="background-image: linear-gradient(rgba(83, 120, 173, 0.326),white,rgba(83, 120, 173, 0.26));">
+    <!-- ===========================calculator=================================== -->
+    <div class="row mt-5">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+
+            <div class="p-4  shadow-lg p-3 mb-5 bg-body-tertiary rounded-3" style="background-image: url(https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=1060&t=st=1717101001~exp=1717101601~hmac=3bca024f4deca80e3bff688ff12275d5624bd24cc69bde1b04e08968fcb0bfbb);">
+                <h4 class="text-dark text-center py-3 fw-bold">CALCULATOR</h4>
+                <div class="row">
+                    <div class="col-md-6"><input class="w-100 py-4 text-center rounded-2 fs-4 fw-bold shadow-lg  bg-body-tertiary rounded-3" type="text"  id="result"> </div>
+                   <div class="col-md-3 "><input type="button" onclick="clearAll()" class="w-100 py-4 bg-primary rounded-2 " value="AC" ></div>
+                   <div class="col-md-3 "><input type="button" onclick="back()" class="w-100 py-4 bg-dark-subtle rounded-2 " value="BACK" ></div>
+
+
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3"><input  type="button" class="w-100 py-2 form-control shadow-lg  bg-body-tertiary rounded-3 " value="7" onclick="display(7)"></div>
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2  form-control shadow-lg  bg-body-tertiary rounded-3" value="8" onclick="display(8)"></div>
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2  form-control shadow-lg  bg-body-tertiary rounded-3" value="9" onclick="display(9)"></div>
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2 rounded-3 form-control bg-warning" value="/" onclick="display('/')"></div>
+                </div>
+                <div class="row  mt-3">
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2  form-control shadow-lg  bg-body-tertiary rounded-3" value="4" onclick="display(4)"></div>
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2  form-control shadow-lg  bg-body-tertiary rounded-3" value="5" onclick="display(5)"></div>
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2  form-control shadow-lg  bg-body-tertiary rounded-3" value="6"onclick="display(6)"></div>
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2 rounded-3 form-control bg-warning" value="*" onclick="display('*')"></div>
+        
+                </div>
+                <div class="row  mt-3">
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2  form-control shadow-lg  bg-body-tertiary rounded-3" value="1" onclick="display(1)"></div>
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2  form-control shadow-lg  bg-body-tertiary rounded-3" value="2" onclick="display(2)"></div>
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2  form-control shadow-lg  bg-body-tertiary rounded-3" value="3" onclick="display(3)"></div>
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2 rounded-3  form-control bg-warning" value="-" onclick="display('-')"></div>
+        
+                </div>
+                <div class="row  mt-3">
+                    <div class="col-md-3 "><input type="button" class="w-100 py-2 form-control shadow-lg  bg-body-tertiary rounded-3" value="0" onclick="display(0)"></div>
+                    <div class="col-md-3"><input type="button" class="w-100 py-2  form-control shadow-lg  bg-body-tertiary rounded-3" value=". " onclick="display('.')"></div>
+                    <div class="col-md-3"><input type="button" class="w-100 py-2 rounded-3 form-control bg-success fw-bold" value="=" onclick="equal()"></div>
+                    <div class="col-md-3"><input type="button" class="w-100 py-2 rounded-3 form-control bg-warning" value="+" onclick="display('+')"></div>
+        
+                </div>
+            </div>
+            
+        
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    
+</body>
+</html>
